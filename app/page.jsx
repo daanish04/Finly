@@ -15,15 +15,17 @@ export default function Home() {
     <div className="flex flex-col ">
       <Hero />
 
-      <section className="py-20 mt-12 bg-blue-50">
+      <section className="py-20 mt-12 bg-blue-50 dark:bg-fuchsia-950">
         <div className="container mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 divide-x-2 divide-blue-300">
             {statsData.map((stat, index) => (
               <div key={index} className="text-center px-6 py-8">
-                <div className="font-bold text-blue-600 mb-2 text-4xl">
+                <div className="font-bold text-blue-600 dark:text-blue-400 mb-2 text-4xl">
                   {stat.value}
                 </div>
-                <div className="text-gray-700">{stat.label}</div>
+                <div className="text-gray-700 dark:text-gray-200">
+                  {stat.label}
+                </div>
               </div>
             ))}
           </div>
@@ -32,7 +34,7 @@ export default function Home() {
 
       <section className="py-20">
         <div className="container mx-auto px-4 mb-12">
-          <h2 className="text-3xl font-bold text-center mb-12 text-slate-800">
+          <h2 className="text-3xl font-bold text-center mb-12 text-slate-800 dark:text-slate-200">
             Everything you need to manage your finances.
           </h2>
         </div>
@@ -42,16 +44,18 @@ export default function Home() {
               <CardContent>
                 {feature.icon}
                 <h3 className="font-semibold text-xl my-2">{feature.title}</h3>
-                <p className="text-gray-600">{feature.description}</p>
+                <p className="text-gray-600 dark:text-gray-400">
+                  {feature.description}
+                </p>
               </CardContent>
             </Card>
           ))}
         </div>
       </section>
 
-      <section className="py-20 bg-blue-50">
+      <section className="py-20 bg-blue-50 dark:bg-fuchsia-950">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12 text-slate-800">
+          <h2 className="text-3xl font-bold text-center mb-12 text-slate-800 dark:text-slate-200">
             How It Works
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-3 divide-x-2 divide-blue-300">
@@ -61,7 +65,9 @@ export default function Home() {
                   {step.icon}
                 </div>
                 <h3 className="font-semibold text-xl mb-4">{step.title}</h3>
-                <p className="text-gray-600">{step.description}</p>
+                <p className="text-gray-600 dark:text-gray-400">
+                  {step.description}
+                </p>
               </div>
             ))}
           </div>
@@ -70,7 +76,7 @@ export default function Home() {
 
       <section className="py-20">
         <div className="container mx-auto px-4 mb-12">
-          <h2 className="text-3xl font-bold text-center mb-12 text-slate-800">
+          <h2 className="text-3xl font-bold text-center mb-12 text-slate-800 dark:text-slate-200">
             What Our Users Say
           </h2>
         </div>
@@ -92,16 +98,20 @@ export default function Home() {
                     <h3 className="font-semibold text-xl">
                       {testimonial.name}
                     </h3>
-                    <p className="text-gray-600">{testimonial.role}</p>
+                    <p className="text-gray-600 dark:text-gray-200">
+                      {testimonial.role}
+                    </p>
                   </div>
                 </div>
-                <p className="text-gray-600">{testimonial.quote}</p>
+                <p className="text-gray-600 dark:text-gray-400">
+                  {testimonial.quote}
+                </p>
               </CardContent>
             </Card>
           ))}
         </div>
       </section>
-      <section className="py-15 bg-blue-600">
+      <section className="py-15 bg-blue-600 dark:bg-indigo-950 ">
         <div className="container mx-auto px-4 mb-4 rounded-lg text-white">
           <h2 className="text-3xl font-bold text-center mb-6">
             Ready to Take Control of Your Finances?

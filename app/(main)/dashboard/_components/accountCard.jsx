@@ -69,11 +69,11 @@ const AccountCard = ({ account }) => {
           </div>
         </CardContent>
         <CardFooter className="mt-2 text-sm font-medium capitalize flex justify-around text-gray-900">
-          <div className="flex items-center">
+          <div className="flex items-center dark:text-gray-100">
             <ArrowUpRight className="mr-1 h-4 w-4 text-green-500" />
             Income
           </div>
-          <div className="flex items-center">
+          <div className="flex items-center dark:text-gray-100">
             <ArrowDownRight className="mr-1 w-4 h-4 text-red-500" />
             Expense
           </div>

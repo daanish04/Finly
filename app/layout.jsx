@@ -3,6 +3,8 @@ import "./globals.css";
 import Header from "@/components/header";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Toaster } from "sonner";
+import { ThemeProvider } from "next-themes";
+import Footer from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,18 +16,18 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <ClerkProvider>
-      <html lang="en">
-        <body className={`${inter.className}`}>
-          {/* header */}
-          <Header />
-          <main className="min-h-screen">{children}</main>
-          <Toaster richColors />
-          {/* footer */}
-          <footer className="bg-blue-50 py-8">
-            <div className="mx-auto px-4 text-center text-gray-700">
-              <p>Made with 💖 by Daanish</p>
-            </div>
-          </footer>
+      <html lang="en" suppressHydrationWarning>
+        <body
+          className={`${inter.className} dark:bg-gradient-to-br from-black via-indigo-950 to-purple-950`}
+        >
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+            {/* header */}
+            <Header />
+            <main className="min-h-screen">{children}</main>
+            <Toaster richColors />
+            {/* footer */}
+            <Footer />
+          </ThemeProvider>
         </body>
       </html>
     </ClerkProvider>

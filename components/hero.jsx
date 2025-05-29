@@ -11,7 +11,7 @@ function Hero() {
         <h1 className="text-5xl lg:text-7xl pb-6 gradient-title">
           Manage your money with Intelligence
         </h1>
-        <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto mt-4">
+        <p className="text-xl text-gray-600 dark:text-gray-100 mb-8 max-w-2xl mx-auto mt-4">
           Finly combines powerful budgeting tools and AI-driven insights to help
           you take control of your financial future.
         </p>
