@@ -28,7 +28,7 @@ const AccountsPage = async ({ params }) => {
 
         <div className="text-right pb-2">
           <div className="text-xl sm:text-2xl font-bold">
-            {parseFloat(account.balance).toFixed(2)}
+            ₹{parseFloat(account.balance).toFixed(2)}
           </div>
           <p className="text-muted-foreground text-sm">
             {account._count.transactions} Transactions

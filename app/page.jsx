@@ -17,7 +17,7 @@ export default function Home() {
 
       <section className="py-20 mt-12 bg-blue-50 dark:bg-fuchsia-950">
         <div className="container mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 divide-x-2 divide-blue-300">
+          <div className="grid grid-cols-2 md:grid-cols-4 md:divide-x-2 divide-blue-300">
             {statsData.map((stat, index) => (
               <div key={index} className="text-center px-6 py-8">
                 <div className="font-bold text-blue-600 dark:text-blue-400 mb-2 text-4xl">
@@ -58,7 +58,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-center mb-12 text-slate-800 dark:text-slate-200">
             How It Works
           </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-3 divide-x-2 divide-blue-300">
+          <div className="grid grid-cols-1 lg:grid-cols-3 lg:divide-x-2 lg:divide-y-0 divide-y divide-blue-300">
             {howItWorksData.map((step, index) => (
               <div key={index} className="text-center px-6 py-4">
                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">

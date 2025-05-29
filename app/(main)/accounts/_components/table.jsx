@@ -368,7 +368,7 @@ const TransactionsTable = ({ transactions }) => {
                     color: transaction.type === "EXPENSE" ? "red" : "green",
                   }}
                 >
-                  {transaction.type === "EXPENSE" ? "-" : "+"}
+                  {transaction.type === "EXPENSE" ? "-" : "+"}₹
                   {transaction.amount.toFixed(2)}
                 </TableCell>
                 <TableCell>
@@ -420,7 +420,7 @@ const TransactionsTable = ({ transactions }) => {
                         Edit
                       </DropdownMenuItem>
                       <DropdownMenuItem
-                        className="text-destructive"
+                        className="text-destructive dark:hover:text-red-500"
                         onClick={() => deleteFn([transaction.id])}
                       >
                         Delete
