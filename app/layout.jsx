@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             {/* header */}
             <Header />
-            <main className="min-h-screen">{children}</main>
+            <main className="min-h-fit">{children}</main>
             <Toaster richColors />
             {/* footer */}
             <Footer />

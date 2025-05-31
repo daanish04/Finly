@@ -17,7 +17,7 @@ const Header = async () => {
             className="h-20 object-contain"
           />
         </Link>
-        <HeaderActions /> {/* ✅ interactive/auth/toggle UI */}
+        <HeaderActions />
       </nav>
     </div>
   );

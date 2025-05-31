@@ -14,7 +14,7 @@ export const statsData = [
     label: "Active Users",
   },
   {
-    value: "$2B+",
+    value: "$20M+",
     label: "Transactions Tracked",
   },
   {
@@ -22,7 +22,7 @@ export const statsData = [
     label: "Uptime",
   },
   {
-    value: "4.9/5",
+    value: "4.7/5",
     label: "User Rating",
   },
 ];

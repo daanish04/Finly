@@ -193,7 +193,7 @@ const AddTransactionForm = ({
               <CreateAccountDrawer>
                 <Button
                   variant="ghost"
-                  className="w-full select-none items-center text-sm bg-blue-100 hover:bg-blue-200 outline-none"
+                  className="w-full select-none items-center text-sm bg-blue-100 hover:bg-blue-200 dark:bg-neutral-900 outline-none"
                 >
                   Create Account
                 </Button>
