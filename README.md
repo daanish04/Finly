@@ -119,7 +119,7 @@ npx inngest-cli@latest dev
 
 ## ⚙️ Deployment
 
-Deployed on Vercel → finly-rho-inky.vercel.app
+Deployed on Vercel → [finly-rho-inky.vercel.app](https://finly-rho-inky.vercel.app/)
 
 
 
