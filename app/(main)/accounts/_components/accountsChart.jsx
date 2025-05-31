@@ -15,7 +15,6 @@ import {
   BarChart,
   CartesianGrid,
   Legend,
-  Rectangle,
   ResponsiveContainer,
   Tooltip,
   XAxis,

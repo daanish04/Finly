@@ -177,14 +177,21 @@ function DashboardOverview({ accounts, transactions }) {
                     ))}
                   </Pie>
                   <Tooltip
-                    formatter={(value) => `₹${value.toFixed(2)}`}
+                    formatter={(value, name) => {
+                      const capitalizedName =
+                        name.charAt(0).toUpperCase() + name.slice(1);
+                      return [`₹${value.toFixed(2)}`, capitalizedName];
+                    }}
                     contentStyle={{
-                      backgroundColor: "hsl(var(--popover))",
-                      border: "1px solid hsl(var(--border))",
-                      borderRadius: "var(--radius)",
+                      backgroundColor: "white",
+                      border: `1px solid "#334155"`,
+                      borderRadius: "0.75rem",
+                      color: "#1e293b",
+                      fontSize: "0.8rem",
+                      padding: "0.7rem",
+                      fontWeight: 500,
                     }}
                   />
-
                   <Legend />
                 </PieChart>
               </ResponsiveContainer>
